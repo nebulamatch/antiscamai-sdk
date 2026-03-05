@@ -1,0 +1,77 @@
+{
+  "name": "@antiscamai/sdk",
+  "version": "1.0.0",
+  "description": "AntiScam AI – request inspection middleware for Node.js (Express, Fastify, Koa, raw http)",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    },
+    "./express": {
+      "require": "./dist/middleware/express.js",
+      "import": "./dist/middleware/express.mjs",
+      "types": "./dist/middleware/express.d.ts"
+    },
+    "./fastify": {
+      "require": "./dist/middleware/fastify.js",
+      "import": "./dist/middleware/fastify.mjs",
+      "types": "./dist/middleware/fastify.d.ts"
+    },
+    "./koa": {
+      "require": "./dist/middleware/koa.js",
+      "import": "./dist/middleware/koa.mjs",
+      "types": "./dist/middleware/koa.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsup src/index.ts src/middleware/express.ts src/middleware/fastify.ts src/middleware/koa.ts --dts --format cjs,esm --out-dir dist",
+    "dev": "tsup --watch",
+    "test": "vitest"
+  },
+  "keywords": ["antiscam", "security", "middleware", "ai", "fraud-detection", "phishing"],
+  "license": "MIT",
+  "author": "AntiScam AI",
+  "homepage": "https://github.com/antiscamai/sdk#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antiscamai/sdk.git",
+    "directory": "node"
+  },
+  "bugs": {
+    "url": "https://github.com/antiscamai/sdk/issues"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.4.0",
+    "tsup": "^8.0.0",
+    "vitest": "^1.0.0",
+    "@types/express": "^4.17.21",
+    "express": "^4.19.0"
+  },
+  "peerDependencies": {
+    "express": ">=4.0.0",
+    "fastify": ">=4.0.0",
+    "koa": ">=2.0.0"
+  },
+  "peerDependenciesMeta": {
+    "express": { "optional": true },
+    "fastify": { "optional": true },
+    "koa": { "optional": true }
+  }
+}

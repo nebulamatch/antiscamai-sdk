@@ -1,0 +1,14 @@
+{
+  "name": "antiscamai-node-demo",
+  "version": "1.0.0",
+  "description": "Validation demo for AntiScam AI Node.js SDK",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test.js"
+  },
+  "dependencies": {
+    "express": "^4.19.0"
+  }
+}
