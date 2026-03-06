@@ -34,7 +34,7 @@ export function antiScamKoa(options: KoaOptions): Middleware {
       return next();
     }
 
-    const { text, urlsFound } = readBody(ctx.request.body);
+    const { text, urlsFound } = readBody((ctx.request as any).body);
 
     const safeHeaders: Record<string, string> = {};
     const allowList = ["user-agent", "referer", "x-forwarded-for", "origin"];

@@ -7,24 +7,24 @@
   "types": "dist/index.d.ts",
   "exports": {
     ".": {
-      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts",
       "import": "./dist/index.mjs",
-      "types": "./dist/index.d.ts"
+      "require": "./dist/index.js"
     },
     "./express": {
-      "require": "./dist/middleware/express.js",
+      "types": "./dist/middleware/express.d.ts",
       "import": "./dist/middleware/express.mjs",
-      "types": "./dist/middleware/express.d.ts"
+      "require": "./dist/middleware/express.js"
     },
     "./fastify": {
-      "require": "./dist/middleware/fastify.js",
+      "types": "./dist/middleware/fastify.d.ts",
       "import": "./dist/middleware/fastify.mjs",
-      "types": "./dist/middleware/fastify.d.ts"
+      "require": "./dist/middleware/fastify.js"
     },
     "./koa": {
-      "require": "./dist/middleware/koa.js",
+      "types": "./dist/middleware/koa.d.ts",
       "import": "./dist/middleware/koa.mjs",
-      "types": "./dist/middleware/koa.d.ts"
+      "require": "./dist/middleware/koa.js"
     }
   },
   "scripts": {
