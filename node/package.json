@@ -1,5 +1,5 @@
 {
-  "name": "@antiscamai/sdk",
+  "name": "@nebulamatch/antiscam-sdk",
   "version": "1.0.0",
   "description": "AntiScam AI – request inspection middleware for Node.js (Express, Fastify, Koa, raw http)",
   "main": "dist/index.js",
