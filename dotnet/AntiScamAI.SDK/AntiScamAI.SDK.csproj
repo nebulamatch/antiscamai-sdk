@@ -6,7 +6,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>AntiScamAI.SDK</RootNamespace>
     <AssemblyName>AntiScamAI.SDK</AssemblyName>
-    <Version>1.0.0</Version>
+    <Version>1.0.1</Version>
     <Authors>AntiScam AI</Authors>
     <Description>AntiScam AI – AI-powered request inspection middleware for ASP.NET Core</Description>
     <PackageTags>antiscam;security;middleware;ai;fraud;phishing;aspnetcore</PackageTags>
