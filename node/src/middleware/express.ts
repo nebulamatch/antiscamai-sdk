@@ -10,7 +10,7 @@ export interface ExpressOptions extends AntiScamConfig {}
  * @example
  * ```ts
  * import express from "express";
- * import { antiScamExpress } from "@nebulamatch/antiscam-sdk/express";
+ * import { antiScamExpress } from "@nebulamatch/antiscamai-sdk/express";
  *
  * const app = express();
  * app.use(express.json());

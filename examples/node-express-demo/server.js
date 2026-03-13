@@ -5,7 +5,7 @@
  * The middleware is inlined here so you don't need to npm-publish the SDK first.
  *
  * To use your real app, replace the inlined middleware with:
- *   import { antiScamExpress } from "@nebulamatch/antiscam-sdk/express";
+ *   import { antiScamExpress } from "@nebulamatch/antiscamai-sdk/express";
  */
 
 import express from "express";

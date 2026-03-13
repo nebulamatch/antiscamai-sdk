@@ -11,7 +11,7 @@ export interface KoaOptions extends AntiScamConfig {}
  * ```ts
  * import Koa from "koa";
  * import bodyParser from "koa-bodyparser";
- * import { antiScamKoa } from "@nebulamatch/antiscam-sdk/koa";
+ * import { antiScamKoa } from "@nebulamatch/antiscamai-sdk/koa";
  *
  * const app = new Koa();
  * app.use(bodyParser());

@@ -1,7 +1,7 @@
-# @nebulamatch/antiscam-sdk
+# @nebulamatch/antiscamai-sdk
 
-[![npm version](https://img.shields.io/npm/v/@nebulamatch/antiscam-sdk?color=crimson&label=npm)](https://www.npmjs.com/package/@nebulamatch/antiscam-sdk)
-[![npm downloads](https://img.shields.io/npm/dm/@nebulamatch/antiscam-sdk)](https://www.npmjs.com/package/@nebulamatch/antiscam-sdk)
+[![npm version](https://img.shields.io/npm/v/@nebulamatch/antiscamai-sdk?color=crimson&label=npm)](https://www.npmjs.com/package/@nebulamatch/antiscamai-sdk)
+[![npm downloads](https://img.shields.io/npm/dm/@nebulamatch/antiscamai-sdk)](https://www.npmjs.com/package/@nebulamatch/antiscamai-sdk)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 **AI-powered request inspection middleware for Node.js.**  
@@ -12,11 +12,11 @@ Drop one middleware into your Express, Fastify, or Koa app and every incoming re
 ## Install
 
 ```bash
-npm install @nebulamatch/antiscam-sdk
+npm install @nebulamatch/antiscamai-sdk
 # or
-yarn add @nebulamatch/antiscam-sdk
+yarn add @nebulamatch/antiscamai-sdk
 # or
-pnpm add @nebulamatch/antiscam-sdk
+pnpm add @nebulamatch/antiscamai-sdk
 ```
 
 ## Quick Start
@@ -25,7 +25,7 @@ pnpm add @nebulamatch/antiscam-sdk
 
 ```typescript
 import express from "express";
-import { antiScamExpress } from "@nebulamatch/antiscam-sdk/express";
+import { antiScamExpress } from "@nebulamatch/antiscamai-sdk/express";
 
 const app = express();
 app.use(express.json());
@@ -44,7 +44,7 @@ app.post("/api/payment", handler);
 
 ```typescript
 import Fastify from "fastify";
-import antiScamFastify from "@nebulamatch/antiscam-sdk/fastify";
+import antiScamFastify from "@nebulamatch/antiscamai-sdk/fastify";
 
 const app = Fastify();
 await app.register(antiScamFastify, {
@@ -57,7 +57,7 @@ await app.register(antiScamFastify, {
 ```typescript
 import Koa from "koa";
 import bodyParser from "koa-bodyparser";
-import { antiScamKoa } from "@nebulamatch/antiscam-sdk/koa";
+import { antiScamKoa } from "@nebulamatch/antiscamai-sdk/koa";
 
 const app = new Koa();
 app.use(bodyParser());
