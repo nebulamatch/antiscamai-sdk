@@ -17,7 +17,7 @@ export interface FastifyOptions extends AntiScamConfig {}
  * @example
  * ```ts
  * import Fastify from "fastify";
- * import antiScamFastify from "@antiscamai/sdk/fastify";
+ * import antiScamFastify from "@nebulamatch/antiscam-sdk/fastify";
  *
  * const app = Fastify();
  * await app.register(antiScamFastify, { apiKey: "YOUR_KEY" });
@@ -94,6 +94,6 @@ const antiScamFastifyPlugin: FastifyPluginAsync<FastifyOptions> = async (
 };
 
 export default fp(antiScamFastifyPlugin, {
-  name: "@antiscamai/sdk-fastify",
+  name: "@nebulamatch/antiscam-sdk-fastify",
   fastify: ">=4.0.0",
 });

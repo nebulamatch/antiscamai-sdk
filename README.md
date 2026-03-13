@@ -1,6 +1,6 @@
 # AntiScam AI — Universal Request Inspection SDK
 
-[![npm](https://img.shields.io/npm/v/@antiscamai/sdk?label=npm&color=crimson)](https://www.npmjs.com/package/@antiscamai/sdk)
+[![npm](https://img.shields.io/npm/v/@nebulamatch/antiscam-sdk?label=npm&color=crimson)](https://www.npmjs.com/package/@nebulamatch/antiscam-sdk)
 [![PyPI](https://img.shields.io/pypi/v/antiscamai?label=pypi&color=blue)](https://pypi.org/project/antiscamai/)
 [![NuGet](https://img.shields.io/nuget/v/AntiScamAI.SDK?label=nuget&color=blue)](https://www.nuget.org/packages/AntiScamAI.SDK/)
 [![Go](https://img.shields.io/github/v/tag/nebulamatch/antiscamai-sdk-go?label=go&color=00acd7)](https://pkg.go.dev/github.com/nebulamatch/antiscamai-sdk-go)
@@ -66,9 +66,9 @@ Your App (any language)
 
 | Language | Framework | Install |
 |---------|-----------|---------|
-| **Node.js** | Express | `npm i @antiscamai/sdk` |
-| **Node.js** | Fastify | `npm i @antiscamai/sdk` |
-| **Node.js** | Koa | `npm i @antiscamai/sdk` |
+| **Node.js** | Express | `npm i @nebulamatch/antiscam-sdk` |
+| **Node.js** | Fastify | `npm i @nebulamatch/antiscam-sdk` |
+| **Node.js** | Koa | `npm i @nebulamatch/antiscam-sdk` |
 | **Python** | FastAPI / Starlette | `pip install antiscamai[fastapi]` |
 | **Python** | Django | `pip install antiscamai[django]` |
 | **Python** | Flask | `pip install antiscamai[flask]` |
@@ -83,7 +83,7 @@ Your App (any language)
 
 ```typescript
 import express from "express";
-import { antiScamExpress } from "@antiscamai/sdk/express";
+import { antiScamExpress } from "@nebulamatch/antiscam-sdk/express";
 
 const app = express();
 app.use(express.json());
@@ -105,7 +105,7 @@ app.post("/api/messages", (req, res) => {
 
 ```typescript
 import Fastify from "fastify";
-import antiScamFastify from "@antiscamai/sdk/fastify";
+import antiScamFastify from "@nebulamatch/antiscam-sdk/fastify";
 
 const app = Fastify();
 await app.register(antiScamFastify, { apiKey: process.env.ANTISCAM_API_KEY! });
